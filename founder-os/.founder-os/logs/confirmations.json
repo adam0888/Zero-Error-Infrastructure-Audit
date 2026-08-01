@@ -1,0 +1,22 @@
+[
+  {
+    "timestamp": "2026-08-01T09:27:01.355Z",
+    "action": "DRAFT_GENERATED",
+    "draftId": "DRAFT-20260801-0001",
+    "engagementId": "ENG-20260801-0001",
+    "draftType": "assessment",
+    "contentHash": "5781404d70bbcad55677799b3d8705656507dfecc0d2ff26060cea53401c4492",
+    "confirmationStatus": "UNCONFIRMED",
+    "mcpBridgeEnabled": false
+  },
+  {
+    "timestamp": "2026-08-01T09:27:01.359Z",
+    "action": "DRAFT_CONFIRMED",
+    "draftId": "DRAFT-20260801-0001",
+    "engagementId": "ENG-20260801-0001",
+    "draftType": "assessment",
+    "contentHash": "5781404d70bbcad55677799b3d8705656507dfecc0d2ff26060cea53401c4492",
+    "confirmationStatus": "CONFIRMED",
+    "mcpBridgeEnabled": false
+  }
+]

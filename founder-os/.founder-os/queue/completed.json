@@ -1,0 +1,139 @@
+[
+  {
+    "id": "TEST-002",
+    "type": "FORM_SUBMISSION",
+    "timestamp": "2026-08-01T09:27:01.333Z",
+    "classification": "ARCHIVED_NOT_A_FIT",
+    "applicant": {
+      "name": "Bob Junior",
+      "email": "bob@example.com",
+      "role": "Junior Developer",
+      "company": "SmallCo"
+    },
+    "screening": {
+      "role": {
+        "qualified": false,
+        "disqualified": true,
+        "normalized": "junior developer"
+      },
+      "database": {
+        "hasMarker": true,
+        "stack": "MySQL basic"
+      },
+      "infraScale": {
+        "hasMarker": false,
+        "evidence": "MySQL basic | Want to learn about databases"
+      },
+      "arr": {
+        "parsed": {
+          "min": 500000,
+          "max": 500000,
+          "explicit": true
+        },
+        "result": {
+          "pass": false,
+          "reason": "ARR below $2M minimum (detected ~$0.5M)",
+          "evidence": {
+            "min": 500000,
+            "max": 500000,
+            "explicit": true
+          }
+        },
+        "raw": "$500K"
+      },
+      "engagementIntent": {
+        "result": {
+          "pass": false,
+          "reason": "No specific infrastructure concern identified; engagement intent unclear",
+          "evidence": "Want to learn about databases"
+        },
+        "raw": "Want to learn about databases"
+      }
+    },
+    "rejectionReasons": [
+      {
+        "criterion": "role",
+        "result": "FAIL",
+        "detail": "Role \"Junior Developer\" matches disqualification pattern"
+      }
+    ],
+    "rejectionOutline": "- role: Role \"Junior Developer\" matches disqualification pattern",
+    "mcpInboxFlag": false,
+    "status": "CLOSED",
+    "source": "website"
+  },
+  {
+    "id": "TEST-003",
+    "type": "FORM_SUBMISSION",
+    "timestamp": "2026-08-01T09:27:01.337Z",
+    "classification": "ARCHIVED_NOT_A_FIT",
+    "applicant": {
+      "name": "Carol VP",
+      "email": "carol@example.com",
+      "role": "VP Engineering",
+      "company": "GrowthStartup"
+    },
+    "screening": {
+      "role": {
+        "qualified": true,
+        "disqualified": false,
+        "normalized": "vp engineering"
+      },
+      "database": {
+        "hasMarker": true,
+        "stack": "PostgreSQL on RDS, production"
+      },
+      "infraScale": {
+        "hasMarker": true,
+        "evidence": "PostgreSQL on RDS, production | Need migration strategy as we scale"
+      },
+      "arr": {
+        "parsed": {
+          "min": 800000,
+          "max": 800000,
+          "explicit": true
+        },
+        "result": {
+          "pass": false,
+          "reason": "ARR below $2M minimum (detected ~$0.8M)",
+          "evidence": {
+            "min": 800000,
+            "max": 800000,
+            "explicit": true
+          }
+        },
+        "raw": "$800K"
+      },
+      "engagementIntent": {
+        "result": {
+          "pass": true,
+          "reason": "Specific infrastructure concern detected",
+          "evidence": "Need migration strategy as we scale"
+        },
+        "raw": "Need migration strategy as we scale"
+      }
+    },
+    "rejectionReasons": [
+      {
+        "criterion": "arr",
+        "result": "FAIL",
+        "detail": "ARR below $2M minimum (detected ~$0.8M)"
+      }
+    ],
+    "rejectionOutline": "- arr: ARR below $2M minimum (detected ~$0.8M)",
+    "mcpInboxFlag": false,
+    "status": "CLOSED",
+    "source": "referral"
+  },
+  {
+    "id": "PMT-LOW-20260801-0001",
+    "type": "INSUFFICIENT_PAYMENT",
+    "timestamp": "2026-08-01T09:27:01.351Z",
+    "orderId": "ls_order_low_999",
+    "amountReceived": 100000,
+    "amountRequired": 500000,
+    "currency": "USD",
+    "status": "CLOSED",
+    "message": "Payment amount $1000.00 is below the $5,000.00 minimum"
+  }
+]

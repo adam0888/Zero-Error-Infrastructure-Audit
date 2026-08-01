@@ -1,0 +1,64 @@
+[
+  {
+    "id": "ENG-20260801-0001",
+    "type": "FORM_SUBMISSION",
+    "timestamp": "2026-08-01T09:27:01.340Z",
+    "classification": "ENGAGEMENT_ACTIVE",
+    "applicant": {
+      "name": "Dan Founder",
+      "email": "dan@example.com",
+      "role": "Founder",
+      "company": "HyperGrowth"
+    },
+    "screening": {
+      "role": {
+        "qualified": true,
+        "disqualified": false,
+        "normalized": "founder"
+      },
+      "database": {
+        "hasMarker": true,
+        "stack": "AWS Aurora PostgreSQL with Global Database, multi-region, HIPAA compliance"
+      },
+      "infraScale": {
+        "hasMarker": true,
+        "evidence": "AWS Aurora PostgreSQL with Global Database, multi-region, HIPAA compliance | We're locked into Aurora and need an exit strategy with zero downtime"
+      },
+      "arr": {
+        "parsed": {
+          "min": 10000000,
+          "max": 10000000,
+          "explicit": true
+        },
+        "result": {
+          "pass": true,
+          "reason": "ARR ~$10.0M within $2M–$20M range",
+          "evidence": {
+            "min": 10000000,
+            "max": 10000000,
+            "explicit": true
+          }
+        },
+        "raw": "$10M"
+      },
+      "engagementIntent": {
+        "result": {
+          "pass": true,
+          "reason": "Specific infrastructure concern detected",
+          "evidence": "We're locked into Aurora and need an exit strategy with zero downtime"
+        },
+        "raw": "We're locked into Aurora and need an exit strategy with zero downtime"
+      }
+    },
+    "mcpInboxFlag": true,
+    "status": "ENGAGEMENT_ACTIVE",
+    "source": "website",
+    "originalSubmissionId": "TEST-004",
+    "activatedAt": "2026-08-01T09:27:01.344Z",
+    "paymentReference": "ls_order_12345",
+    "paymentAmount": 750000,
+    "paymentCurrency": "USD",
+    "paymentEventType": "order_paid",
+    "customerEmail": "dan@example.com"
+  }
+]

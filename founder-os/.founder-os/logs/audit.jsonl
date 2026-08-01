@@ -1,0 +1,9 @@
+{"timestamp":"2026-08-01T09:27:01.332Z","action":"PROCESS_FORM","detail":{"submissionId":"TEST-001","classification":"QUALIFIED_HIGH_PRIORITY","rejectionReasons":[]}}
+{"timestamp":"2026-08-01T09:27:01.336Z","action":"PROCESS_FORM","detail":{"submissionId":"TEST-002","classification":"ARCHIVED_NOT_A_FIT","rejectionReasons":["role"]}}
+{"timestamp":"2026-08-01T09:27:01.340Z","action":"PROCESS_FORM","detail":{"submissionId":"TEST-003","classification":"ARCHIVED_NOT_A_FIT","rejectionReasons":["arr"]}}
+{"timestamp":"2026-08-01T09:27:01.344Z","action":"PROCESS_FORM","detail":{"submissionId":"TEST-004","classification":"QUALIFIED_HIGH_PRIORITY","rejectionReasons":[]}}
+{"timestamp":"2026-08-01T09:27:01.351Z","action":"PROCESS_PAYMENT","detail":{"result":"ENGAGEMENT_ACTIVATED","orderId":"ls_order_12345","applicationId":"TEST-004","engagementId":"ENG-20260801-0001","amount":750000}}
+{"timestamp":"2026-08-01T09:27:01.354Z","action":"PROCESS_PAYMENT","detail":{"result":"INSUFFICIENT","orderId":"ls_order_low_999"}}
+{"timestamp":"2026-08-01T09:27:01.359Z","action":"GENERATE_DRAFT","detail":{"draftId":"DRAFT-20260801-0001","engagementId":"ENG-20260801-0001","draftType":"assessment","contentHash":"5781404d70bbcad55677799b3d8705656507dfecc0d2ff26060cea53401c4492","contentLength":1112}}
+{"timestamp":"2026-08-01T09:27:01.361Z","action":"CONFIRM_DRAFT","detail":{"draftId":"DRAFT-20260801-0001","engagementId":"ENG-20260801-0001","contentHash":"5781404d70bbcad55677799b3d8705656507dfecc0d2ff26060cea53401c4492"}}
+{"timestamp":"2026-08-01T09:27:01.362Z","action":"PROCESS_PAYMENT","detail":{"result":"DUPLICATE","orderId":"ls_order_12345","cachedAt":"2026-08-01T09:27:01.344Z"}}

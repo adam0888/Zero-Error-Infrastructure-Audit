@@ -1,0 +1,57 @@
+[
+  {
+    "id": "TEST-001",
+    "type": "FORM_SUBMISSION",
+    "timestamp": "2026-08-01T09:27:01.328Z",
+    "classification": "QUALIFIED_HIGH_PRIORITY",
+    "applicant": {
+      "name": "Alice Chen",
+      "email": "alice@example.com",
+      "role": "CTO",
+      "company": "TechScale Inc"
+    },
+    "screening": {
+      "role": {
+        "qualified": true,
+        "disqualified": false,
+        "normalized": "cto"
+      },
+      "database": {
+        "hasMarker": true,
+        "stack": "PostgreSQL on AWS RDS, multi-region replication, production"
+      },
+      "infraScale": {
+        "hasMarker": true,
+        "evidence": "PostgreSQL on AWS RDS, multi-region replication, production | Need zero-downtime database migration strategy to avoid AWS lock-in"
+      },
+      "arr": {
+        "parsed": {
+          "min": 5000000,
+          "max": 5000000,
+          "explicit": true
+        },
+        "result": {
+          "pass": true,
+          "reason": "ARR ~$5.0M within $2M–$20M range",
+          "evidence": {
+            "min": 5000000,
+            "max": 5000000,
+            "explicit": true
+          }
+        },
+        "raw": "$5M"
+      },
+      "engagementIntent": {
+        "result": {
+          "pass": true,
+          "reason": "Specific infrastructure concern detected",
+          "evidence": "Need zero-downtime database migration strategy to avoid AWS lock-in"
+        },
+        "raw": "Need zero-downtime database migration strategy to avoid AWS lock-in"
+      }
+    },
+    "mcpInboxFlag": true,
+    "status": "PENDING_BOOKING",
+    "source": "website"
+  }
+]
