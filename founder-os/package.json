@@ -1,0 +1,15 @@
+{
+  "name": "founder-os-server",
+  "version": "1.0.0",
+  "description": "Zero-Error Infrastructure Lock-In — Founder OS public server (Lemon Squeezy webhook + application intake)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node test/run.js",
+    "verify": "node src/orchestrator.js verify"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {}
+}
